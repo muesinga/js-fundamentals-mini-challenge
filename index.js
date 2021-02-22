@@ -77,35 +77,53 @@ console.log("%c----------", "color: red")
 
 // ***** Question 5 *****
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 5", "color: red")
-// const student1 = { name: "Duane", grade: 88 }
-// updateGrade(student1, 92)
-// console.log(student1)
-// // => { name: "Duane", grade: 92 }
-// console.log("%c----------", "color: red")
+console.log("%cQuestion 5", "color: red")
+
+const student1 = { name: "Duane", grade: 88 }
+
+function updateGrade(student, grade) {
+student.grade = grade
+}
+
+updateGrade(student1, 92)
+console.log(student1)
+
+// => { name: "Duane", grade: 92 }
+
+console.log("%c----------", "color: red")
 
 
 
 // ***** Question 6 *****
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 6", "color: red")
+console.log("%cQuestion 6", "color: red")
 
-// const users = [ 
-//   { 
-//     name: "Duane", phones: { cell: "555-123-4567", office: "555-456-7890" }
-//   },
-//   { 
-//     name: "Liza", phones: { cell: "555-234-5678", office: "555-567-1234" }
-//   }
-// ]
-// printNameAndPhones(users)
-// // => "Duane"
+const users = [ 
+  { 
+    name: "Duane", phones: { cell: "555-123-4567", office: "555-456-7890" }
+  },
+  { 
+    name: "Liza", phones: { cell: "555-234-5678", office: "555-567-1234" }
+  }
+]
+
+function printNameAndPhones(arr) {
+  for(let i = 0; 1<arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+// function printNameAndPhones(arr) {
+// arr.forEach(element => console.log(element));
+// }
+printNameAndPhones(users)
+// => "Duane"
 // => "Cell: 555-123-4567"
 // => "Office: 555-456-7890"
 // => "Liza"
 // => "Cell: 555-234-5678"
 // => "Office: 555-567-1234"
-// console.log("%c----------", "color: red") 
+console.log("%c----------", "color: red") 
 
 
 // ***** Callbacks *****
