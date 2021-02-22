@@ -107,15 +107,15 @@ const users = [
   }
 ]
 
-function printNameAndPhones(arr) {
-  for(let i = 0; 1<arr.length; i++) {
-    console.log(arr[i]);
-  }
-}
-
 // function printNameAndPhones(arr) {
-// arr.forEach(element => console.log(element));
+//   for(let i = 0; 1<arr.length; i++) {
+//     console.log(arr[i]);
+//   }
 // }
+
+function printNameAndPhones(arr) {
+arr.forEach(element => console.log(element));
+}
 printNameAndPhones(users)
 // => "Duane"
 // => "Cell: 555-123-4567"
